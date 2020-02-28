@@ -88,12 +88,6 @@ class MovieDetails extends Component{
                             </label>
                             <input disabled readOnly name="country" className="input-info" value={this.state.movieinfo.country ? this.state.movieinfo.country : ""} onChange={this.onChange}></input>
                         </div>
-                        <div className="info-row">
-                            <label htmlFor="poster">
-                                Poster: 
-                            </label>
-                            <input disabled readOnly name="poster" className="input-info" value={this.state.movieinfo.poster ? this.state.movieinfo.poster : ""} onChange={this.onChange}></input>
-                        </div>
                         <label style={
                             {marginTop: "5rem"}
                             }>

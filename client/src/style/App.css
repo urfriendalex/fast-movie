@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700i&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +12,7 @@
   height: 100vh;
   background: rgb(26, 26, 26);
   color: white;
-  font-family: Helvetica Neue, sans-serif;
+  font-family:'Lato', sans-serif;
 }
 
 a {
@@ -134,7 +136,7 @@ a {
   display: flex;
   height: 70px;
   width: 100%;
-  background: rgb(26, 26, 26);
+  background: rgb(22, 22, 22);
   /* box-shadow: 2px 1px 8px #fff; */
 }
 
@@ -151,7 +153,7 @@ a {
   text-decoration: none;
   text-transform: uppercase;
   font-size: larger;
-  font-weight: 700;
+  font-weight: 600;
   color: #fadd41;
   text-shadow: -0px 0px 1px white;
   -webkit-text-stroke: 0.4px #1a1a1a;
@@ -337,6 +339,7 @@ button.awards{
   background-image: linear-gradient(to right, rgb(26, 26, 26) 50%, #fadd41 50%);
   background-size: 200% 101%;
   background-position: 0% 0;
+  border-radius: 1.4rem;
   overflow: hidden;
   padding: 0;
   outline: none;
@@ -357,6 +360,7 @@ button.awards{
   font-weight: 700;
   color: #fadd41;
   border: 1px solid #fadd41;
+  border-radius: 2rem;
   background-image: linear-gradient(to right, rgb(26, 26, 26) 50%, #fadd41 50%);
   background-size: 200% 100%;
   background-position: 0% 0;
@@ -376,190 +380,196 @@ button.awards{
   align-items: center;
   justify-content: space-around;
   flex-flow: row wrap;
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 /* MOVIE CARD */
 
-.movieCard{
+.movieCard {
   position: relative;
   display: -ms-flexbox;
   display: flex;
-  width: 350px;
+  width: 330px;
   -ms-flex-direction: column;
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  margin: 0 0 2rem 0;
-  background-color: #5B5B5B;
+  margin: 0 4rem 0rem;
+  background-color: rgb(46, 46, 46);
   background-clip: border-box;
-  border: 5px solid #F3EFF5;
-  border-radius: 0.25rem;
-  color: #F3EFF5;
-  box-shadow: 0 4px 8px 0 rgba(255,255,255,0.2);
-  transition: all .3s ease-in;
+  border-radius: 3rem;
+  color: #f3eff5;
+  box-shadow: 5px 0px 16px 1px rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease-in;
 }
 .movieCard:hover {
-	transform: scale(1.01);
-	box-shadow: 0 8px 16px 0 rgba(255,255,255,0.2);
-  }
+  background-color: rgba(190, 190, 190, 0);
+}
 
-.movieCard a{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.movieCard a {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  a .card-img-top {
-	width: 70%;
-	height: 350px;
-	margin: 0.8rem auto 0 auto;
-	border-top-left-radius: calc(0.25rem - 1px);
-	border-top-right-radius: calc(0.25rem - 1px);
+a .card-img-top {
+  width: 70%;
+  height: 350px;
+  margin: 0.8rem auto 0 auto;
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+  transition: all 0.4s ease-in-out;
 }
 
 .card-img-top:hover {
-	scale: 2;
+  transform: scale(1.01);
 }
 
 .card-body {
-	-ms-flex: 1 1 auto;
-	flex: 1 1 auto;
-	padding: 1.25rem;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 1.25rem;
 }
 
 .card-title {
-	margin-bottom: 0.75rem;
-	font-size: large;
-	letter-spacing: 0.05rem;
-  }
+  margin-bottom: 0.75rem;
+  font-size: large;
+  letter-spacing: 0.05rem;
+}
 
 .card-text {
-	margin-bottom: 0;
-	font-size: 1rem;
-	font-weight: 400;
-	height: 2rem;
-	line-height: 1.2rem;
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	transition: all .9s ease-out;
+  margin-bottom: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  height: 1.5rem;
+  line-height: 1.2rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: all 0.9s ease-out;
 }
 
 .card-btns {
-	margin-bottom: 0;
-	display: flex;
-	justify-content: space-around;
-	width: 100%;
-	margin-top: 1.3rem;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 1.3rem;
 }
 
-.card-body button{
-	height: 50px;
-	width: 50px;
-	border-radius: 100%;
-	border: none;
-	outline: none;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-size: larger;
-	transition: all .3s ease-in-out;
-	cursor: pointer;
+.card-body button {
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
 
-
-.card-body .btn-like.liked{
-	background: rgb(224, 80, 133);
-	color: #F3EFF5;
+.card-body .btn-like.liked {
+  background: rgb(224, 80, 133);
+  color: #f3eff5;
 }
 
-.card-body .btn-dislike, .card-body .btn-like{
-	background: #F3EFF5;
-	color: #1a1a1a;
+.card-body .btn-dislike,
+.card-body .btn-like {
+  background: #f3eff5;
+  color: #1a1a1a;
 }
 
-.card-body .btn-dislike:hover{
-	background: #F21B3F;
-	color: #f3f3f3;
+.card-body .btn-dislike:hover {
+  background: #f21b3f;
+  color: #f3f3f3;
 }
 
-.card-body .btn-like:hover{
-	background: #fadd41;
-	color: #1a1a1a;
+.card-body .btn-like:hover {
+  background: #fadd41;
+  color: #1a1a1a;
 }
 
 /* MOVIE DETAILS */
 
-
-.details-container, .add-container, .edit-container{
+.details-container,
+.add-container,
+.edit-container {
   display: flex;
   flex-direction: row;
   height: 90%;
   width: 95%;
 }
 
-.img-left, .info-right{
+.img-left,
+.info-right {
   width: 40%;
   display: flex;
   justify-content: center;
   align-content: center;
 }
 
-.img-left img{
+.img-left img {
   object-fit: contain;
   width: 90%;
   max-width: 400px;
   height: auto;
 }
 
-.info-right{
+.info-right {
   width: 60%;
   flex-direction: column;
 }
 
-.info-right label{
+.info-right label {
   text-transform: capitalize;
   height: 3em;
   display: flex;
   vertical-align: middle;
-  align-items: center;  
+  align-items: center;
 }
 
-.info-right input, .info-right input:disabled, .info-right input:focus, .info-right input:active, .info-right textarea{
-    background: transparent;
-    color: white;
-    border: none;
-    box-shadow: none;
-    border-bottom: 1px solid rgb(196, 193, 193);
-    border-radius: 0;
-    position: relative;
-    height: 3rem;
-    width: 25rem;
-    text-align: center;
-    outline: none;
+.info-right input,
+.info-right input:disabled,
+.info-right input:focus,
+.info-right input:active,
+.info-right textarea {
+  background: transparent;
+  color: white;
+  border: none;
+  box-shadow: none;
+  border-bottom: 1px solid rgb(196, 193, 193);
+  border-radius: 0;
+  position: relative;
+  height: 3rem;
+  width: 25rem;
+  text-align: center;
+  outline: none;
 }
 
-
-.info-right textarea.input-info{
+.info-right textarea.input-info {
   height: 100px;
 }
 
-.info-right input:enabled, .info-right textarea:enabled{
+.info-right input:enabled,
+.info-right textarea:enabled {
   resize: none;
 }
 
-.info-right input:enabled:focus, .info-right textarea:enabled:focus{
+.info-right input:enabled:focus,
+.info-right textarea:enabled:focus {
   border-bottom: 1px solid whitesmoke;
 }
 
-.inputWrapper{
+.inputWrapper {
   position: relative;
   height: 3rem;
 }
 
-.inputWrapper::after{
+.inputWrapper::after {
   content: "";
   position: absolute;
   left: 0;
@@ -567,21 +577,22 @@ button.awards{
   height: 1px;
   width: 0;
   background: rgb(212, 170, 106);
-  transition: all .4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
-.inputWrapper:focus-within::after, .inputWrapper:hover::after{
+.inputWrapper:focus-within::after,
+.inputWrapper:hover::after {
   width: 100%;
 }
 
-.info-row{
+.info-row {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
 
 /* LISTS */
-.d-none{
+.d-none {
   display: none;
 }
 
@@ -601,7 +612,7 @@ table td {
   white-space: nowrap;
 }
 table tr {
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 table tr:hover {
   background: #fadd41;
@@ -624,7 +635,9 @@ table thead th {
   text-align: center;
 }
 
-.btn-edit, .btn-delete, .btn-add{
+.btn-edit,
+.btn-delete,
+.btn-add {
   background: transparent;
   width: 50px;
   height: 20px;
@@ -632,90 +645,88 @@ table thead th {
   margin: auto 8px;
   color: white;
   cursor: pointer;
-  transition: all .5s ease-out;
+  transition: all 0.5s ease-out;
 }
 
-table tr:hover .btn-edit, table tr:hover .btn-delete, table tr:hover .btn-add{
+table tr:hover .btn-edit,
+table tr:hover .btn-delete,
+table tr:hover .btn-add {
   color: #1a1a1a;
   border: 1px solid #1a1a1a;
 }
 
-.btn-add{
+.btn-add {
   width: 100px;
   height: 20px;
   margin-left: 5%;
 }
 
-.btn-edit:hover{
+.btn-edit:hover {
   background: greenyellow;
 }
-.btn-add:hover{
+.btn-add:hover {
   background: #fadd41;
   color: #1a1a1a;
 }
-.btn-delete:hover{
+.btn-delete:hover {
   background: rgb(253, 82, 82);
 }
 
-
-.page-title{
+.page-title {
   text-align: center;
   width: 100%;
 }
 /* ADD VIEW */
 
-.btn-submit{
-    color: #fadd41;
-    background: transparent;
-    height: 60px;
-    width: 145px;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    margin-left: auto;
-    margin-top: 10%;
-    cursor: pointer;
-    transition: .4s all ease-out;
+.btn-submit {
+  color: #fadd41;
+  background: transparent;
+  height: 60px;
+  width: 145px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin-left: auto;
+  margin-top: 10%;
+  cursor: pointer;
+  transition: 0.4s all ease-out;
 }
 
-
-
-.btn-submit:disabled:hover{
+.btn-submit:disabled:hover {
   background: #adadad;
   color: #1a1a1a5d;
 }
 
-.btn-submit:hover{
+.btn-submit:hover {
   background: #fadd41;
   color: #1a1a1a;
 }
 
-
-.wip{
+.wip {
   width: 100%;
   height: 100%;
   text-align: center;
   color: #fadd41;
 }
 
-.invalid-feedback{
+.invalid-feedback {
   height: 10px;
   color: red;
   display: border-box;
   text-align: right;
 }
 
-.select-container{
+.select-container {
   display: flex;
   margin-top: 10%;
   width: 100%;
   justify-content: space-around;
 }
-.select-container div{
+.select-container div {
   width: 400px;
-  color: #212322
+  color: #212322;
 }
 
-.submit-container{
+.submit-container {
   display: flex;
-  width: 80%
+  width: 80%;
 }
