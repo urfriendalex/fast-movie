@@ -2,8 +2,10 @@ body {
   margin: 0;
   font-family: "Helvetica Neue";
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background: rgb(26, 26, 26);
+}
+
+html, body, #root, .App {
+  height: 100%
 }
 
 code {

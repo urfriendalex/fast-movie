@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import MovieCard from "./components/MoiveCard";
 import ApiService from './ApiService'
+import HorizontalScroll from 'react-scroll-horizontal'
+import { faGuitar } from '@fortawesome/free-solid-svg-icons';
 
 class RandomMovie extends Component{
     constructor(props){
@@ -37,14 +39,15 @@ class RandomMovie extends Component{
                     <button onClick={this.onClick}>get random movie</button>
                     <input type="number" pattern='[0-9]{0,5}' value={this.state.num} placeholder="0" onChange={this.handleChange} />
                 </form>
-                <div className="moive-cards">
+                <i class="fa fa-adjust" aria-hidden="true"></i>
+                <HorizontalScroll>
                     {
                         this.state.data.map(
                             movie =>
                             <MovieCard key={movie.id} movie = {movie} />
                         )
                     }
-                </div>  
+                </HorizontalScroll>
             </div>
         )
     }

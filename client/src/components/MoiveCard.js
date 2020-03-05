@@ -32,12 +32,12 @@ class MovieCard extends Component{
     handeRemove(){
         this.setState({
             visible: false
-        })
+        });
     }
 
     render(){
         return (
-            <Fade when={this.state.visible} collapse delay={200}>
+            <Fade when={this.state.visible} collapse delay={400}>
                 <div className="movieCard">
                     <Link to='movie-details' onClick={this.getDetails} >
                         <img className="card-img-top" src={this.props.movie.poster ? this.props.movie.poster : "https://www.theprintworks.com/wp-content/themes/psBella/assets/img/film-poster-placeholder.png"} alt={this.props.movie.title} />
